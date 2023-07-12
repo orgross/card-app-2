@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# Buisness Cards app  React Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple React project that allows you to create and display business cards. 
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Input fields for name, adress, phone number, email and biz number.
+- Upload a profile image for your card.
+- A map that will show your business exact location 
+- Pages to manage your own cards by CRUD actions and to save the cards you liked.
+- Search Bar to find the Business you're looking for by its biz number or name.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository to your local machine:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   ```bash
+   git clone https://github.com/orgross/card-app-2.git
+   ```
 
-### `npm test`
+2. Go to project directory:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   cd card-app-2
+   ```
 
-### `npm run build`
+3. Install the dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Connecting the API 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- To work with this website you will need to use the Cards API:
 
-### `npm run eject`
+1. On new VScode folder create a new file and clone the server repository:
+   ```bash
+   git clone https://github.com/orgross/server-card-2.git
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Navigate to the project directory:
+   ```bash
+   cd server-card-2
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+   
+4. Start the API Server
+   ```bash
+   node app
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Start the development server:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm start
+   ```
 
-## Learn More
+2. Open your web browser and visit `http://localhost:3000` to access the application.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. New User? Go to http://localhost:3000/signup and Enter your personal information in the input fields provided to register the website. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Already sigend? Go to http://localhost:3000/login and enter your user details. Once logged in you'll be able to create, edit or delete cards. 
 
-### Code Splitting
+5. You can also log in with the defaults user details from the API: 
+   email: "admin@admin.com"
+   password: "Abc123!".
+   This user is an admin, which means you'll be able to visit the sandbox of my project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    
 
-### Analyzing the Bundle Size
+## Customization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+You can customize the project to fit your specific needs:
 
-### Making a Progressive Web App
+- Modify the layout and styling in the `src/components` directory.
+- Extend the functionality by adding new features or components.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contributing
 
-### Advanced Configuration
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the project's GitHub repository.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## License
 
-### Deployment
+This project is licensed under the [MIT License](LICENSE). Feel free to use and modify it for your own purposes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Acknowledgements
 
-### `npm run build` fails to minify
+- This project was inspired by the need for a simple and intuitive business card creation tool.
+- The React framework and its ecosystem made it possible to develop this application quickly and efficiently.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact
+
+If you have any questions, suggestions, or feedback, please feel free to contact the project maintainer at orgross123@gmail.com
+
+Happy Debugging
